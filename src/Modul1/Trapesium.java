@@ -3,7 +3,7 @@ package Modul1;
 public class Trapesium {
     public static void main(String[] args) {
         LuasTrapesium Trapesium= new LuasTrapesium(5,7,8);
-        double LuasTrapesium = Trapesium.LuasTrapesium();
+        double LuasTrapesium = Trapesium.luasTrapesium();
         System.out.println("Luas trapesium : " + LuasTrapesium);
     }
 }
@@ -18,17 +18,8 @@ class LuasTrapesium {
         this.alas2 = alas2;
         this.tinggi = tinggi;
     }
-    double getAlas1() {
-        return alas1;
-    }
-    double getAlas2() {
-        return alas2;
-    }
-    double getTinggi() {
-        return tinggi;
-    }
 
-    double LuasTrapesium() {
+    double luasTrapesium() {
         return 0.5 * (alas1 + alas2) * tinggi;
     }
 }

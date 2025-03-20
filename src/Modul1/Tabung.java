@@ -2,17 +2,17 @@ package Modul1;
 
 public class Tabung {
     public static void main(String[] args) {
-        LuasIsi Tabung = new LuasIsi(10, 7);
-        double LuasIsi = Tabung.HitungLuas();
-        System.out.println("Luas Isi Tabung : " + LuasIsi);
+        LuasIsi Tabung1 = new LuasIsi(10, 7);
+        double LuasIsi = Tabung1.hitungLuas();
+        System.out.println("Luas Isi Tabung1 : " + LuasIsi);
 
-        Volume Tabunng = new Volume(12, 7);
-        double Volume = Tabunng.HitungVolume();
-        System.out.println("Volume Tabung : " + Volume);
+        Volume Tabung = new Volume(12, 7);
+        double Volume = Tabung.hitungVolume();
+        System.out.println("Volume Tabung1 : " + Volume);
     }
 }
 class LuasIsi {
-    double PI = Math.PI;
+    double PI = Math .PI;
     double tinggi;
     double jarijari;
 
@@ -21,14 +21,7 @@ class LuasIsi {
         this.jarijari = jarijari;
     }
 
-    double gettinggi() {
-        return tinggi;
-    }
-    double getjarijari() {
-        return jarijari;
-    }
-
-    double HitungLuas(){
+    double hitungLuas(){
         return 2*PI*jarijari*(jarijari+tinggi);
     }
 
@@ -43,13 +36,8 @@ class Volume{
         this.tinggi = tinggi;
         this.jarijari = jarijari;
     }
-    double gettinggi() {
-        return tinggi;
-    }
-    double getjarijari() {
-        return jarijari;
-    }
-    double HitungVolume(){
+
+    double hitungVolume(){
         return PI*jarijari*jarijari*tinggi;
     }
 }
