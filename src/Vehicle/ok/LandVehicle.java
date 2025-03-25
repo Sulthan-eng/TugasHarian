@@ -1,6 +1,6 @@
 package Vehicle.ok;
 
-//Class
+//subclass mewarisi abstract class dan mengimplementasi interface
 public class LandVehicle extends Vehicle implements Refuelable {
     //new fields
     private int wheels; //jumlah roda
@@ -11,12 +11,13 @@ public class LandVehicle extends Vehicle implements Refuelable {
         this.wheels = wheels;
     }
 
-    //implementasi metode move(), @override optional
+    //implementasi metode dari abstract class
+    @Override  //optional, untuk memastikan sudah benar-benar override metode di abstract class
     public void move(){
         System.out.println(getName() + " bergerak di darat dengan " + wheels + " roda pada kecepatan " + getSpeed() + " km/jam");
     }
 
-    //implementasi metode calculateFuelConsumption(double distance), @override optional
+    @Override
     public void calculateFuelConsumption(double distance){
         double fuelConsumption = distance / 10;
         double remainingFuelLevel = getFuelLevel() - fuelConsumption;
@@ -26,10 +27,11 @@ public class LandVehicle extends Vehicle implements Refuelable {
     }
 
     //implementasi metode refuel (double amount) dari Interface Refuelable
-    @Override
+    @Override //
     public void refuel(double amount){
         double newFuelLevel = getFuelLevel() + amount;
 
+        //bisa assign nilai bila telah divalidasi
         newFuelLevel = validateFuelLevel(newFuelLevel);
         setFuelLevel(newFuelLevel);
     }
@@ -38,6 +40,7 @@ public class LandVehicle extends Vehicle implements Refuelable {
         return getFuelLevel() < 20;
     }
 
+    //implementasi fitur tambahan di class abstract
     @Override
     public void stop(){
         System.out.println(getName() + " ini berhenti ketika bertemu lampu merah");
