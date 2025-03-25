@@ -48,6 +48,6 @@ public abstract class Vehicle implements Refuelable {
     public abstract void move(); //kendaraan akan bergerak
     public abstract void calculateFuelConsumption(double distance); //menghitung fuel consumption dan remaining full level
 
-    //fitur tambahan
+    //fitur tambahan untuk menghentikan kendaraan
     public abstract void stop();
 }
