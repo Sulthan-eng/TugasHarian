@@ -1,7 +1,7 @@
 package Vehicle.ok;
 
 //subclass LandVehicle mewarisi abstract class Vehicle dan mengimplementasikan interface
-public class LandVehicle extends Vehicle implements Refuelable {
+public class LandVehicle extends Vehicle  {
     //new fields
     private final int wheels; //jumlah roda
 

@@ -1,7 +1,7 @@
 package Vehicle.ok;
 
 //Subclass WaterVehicle mewarisi abstract class Vehicle dan mengimplementasikan interface yang memiliki fields baru
-public class WaterVehicle extends Vehicle implements Refuelable{
+public class WaterVehicle extends Vehicle {
     private boolean hasPropeller;
 
     //subclass konstruktor mengambil nilai args, memanggil konstruktor super dan meneruskan nilai

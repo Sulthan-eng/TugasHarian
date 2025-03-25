@@ -1,6 +1,6 @@
 package Vehicle.ok;
 
-public class AirVehicle extends Vehicle implements Refuelable {
+public class AirVehicle extends Vehicle  {
     //fields
     private boolean hasPropeller;
 

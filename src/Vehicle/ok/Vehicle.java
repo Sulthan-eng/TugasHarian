@@ -12,7 +12,7 @@ public abstract class Vehicle implements Refuelable {
         this.speed = speed;
         this.fuelLevel = validateFuelLevel(fuelLevel);  //validasi nilai bahan bakar
     }
-    //Getter akan mengembalikan nilai atributnya masing-masing ketika bila dipanggil
+    //Getter akan mengembalikan nilai atributnya masing-masing ketika dipanggil
     public String getName() {
         return name;
     }
