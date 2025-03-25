@@ -6,7 +6,7 @@ public class VehicleDemo {
                 new LandVehicle("Bus",120,100,4),
                 new WaterVehicle("Speedboat", 80,50,true),
                 new LandVehicle("Bugatti Chiron", 200,95,4),
-                new WaterVehicle("Kapal Ferry", 140,22,true),
+                new WaterVehicle("Kapal Ferry", 140,23,true),
                 new AirVehicle("Helikopter",200,45,true)
         };
 

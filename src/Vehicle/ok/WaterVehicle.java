@@ -19,13 +19,13 @@ public class WaterVehicle extends Vehicle implements Refuelable{
         this.hasPropeller = hasPropeller;
     }
 
-    //implementasi metode move(), penggunaan override optional
-    @Override
+    //implementasi metode move()
+    @Override //optional, untuk memastikan sudah benar-benar override metode di abstract class
     public void move(){
         System.out.println(getName() + " bergerak di air dengan kecepatan " + getSpeed() + " km/jam, menggunakan baling-baling: " + hasPropeller );
     }
 
-    //implementasi metode calculateFuelConsumption(double distance
+    //implementasi metode calculateFuelConsumption(double distance)
     @Override
     public void calculateFuelConsumption(double distance){
         double fuelConsumption = distance / 8;
@@ -35,23 +35,26 @@ public class WaterVehicle extends Vehicle implements Refuelable{
         System.out.println("Konsumsi Bahan Bakar Untuk " + distance + "km: " + fuelConsumption + "%,Sisa bahan bakar: " + remainingFuelLevel + "%");
     }
 
-    //implementasi interface Refuelable
-    @Override
-    public void refuel (double amount){
-        double newFuelLevel = getFuelLevel() + amount;
-
-        newFuelLevel = validateFuelLevel(newFuelLevel);
-        setFuelLevel(newFuelLevel);
-    }
-
-    @Override
-    public boolean isFuelLow() {
-        return getFuelLevel() < 20;
-    }
-
+    //implementasi fitur tambahan di class abstract
     @Override
     public void stop(){
         System.out.println(getName() + " ini berhenti ketika bertemu pelabuhan");
     }
 
+    //implementasi interface Refuelable
+    @Override
+    public void refuel (double amount){
+        //menambah jumlah bahan bakar ke bahan bakar terbaru
+        double newFuelLevel = getFuelLevel() + amount;
+
+        //bisa assign nilai bila telah divalidasi
+        newFuelLevel = validateFuelLevel(newFuelLevel);
+        setFuelLevel(newFuelLevel);
+    }
+
+    //akan terjadi bila bahan bakar kurang dari 20%
+    @Override
+    public boolean isFuelLow() {
+        return getFuelLevel() < 20;
+    }
 }

@@ -26,9 +26,16 @@ public class LandVehicle extends Vehicle implements Refuelable {
         System.out.println("Konsumsi Bahan Bakar Untuk " + distance + " km: " + fuelConsumption + "%, Sisa bahan bakar: " + remainingFuelLevel + "%");
     }
 
+    //implementasi fitur tambahan di class abstract
+    @Override
+    public void stop(){
+        System.out.println(getName() + " ini berhenti ketika bertemu lampu merah");
+    }
+
     //implementasi metode refuel (double amount) dari Interface Refuelable
     @Override //
     public void refuel(double amount){
+        //menambah jumlah bahan bakar ke bahan bakar terbaru
         double newFuelLevel = getFuelLevel() + amount;
 
         //bisa assign nilai bila telah divalidasi
@@ -39,11 +46,4 @@ public class LandVehicle extends Vehicle implements Refuelable {
     public boolean isFuelLow() {
         return getFuelLevel() < 20;
     }
-
-    //implementasi fitur tambahan di class abstract
-    @Override
-    public void stop(){
-        System.out.println(getName() + " ini berhenti ketika bertemu lampu merah");
-    }
-
 }
