@@ -1,6 +1,6 @@
 package Vehicle.ok;
 
-public class AirVehicle extends Vehicle {
+public class AirVehicle extends Vehicle implements Refuelable {
     //fields
     private boolean hasPropeller;
 
@@ -29,7 +29,7 @@ public class AirVehicle extends Vehicle {
     //implementasi metode calculateFuelConsumption(double distance)
     @Override
     public void calculateFuelConsumption(double distance){
-        //menghitung bahan bakar yang
+        //menghitung bahan bakar yang digunakan dan akan dikurang dengan bahan bakar awal
         double fuelConsumption = distance / 6;
         double remainingFuelLevel = getFuelLevel() - fuelConsumption;
 
