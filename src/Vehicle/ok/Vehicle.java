@@ -6,7 +6,7 @@ public abstract class Vehicle implements Refuelable {
     private int speed;
     private double fuelLevel;
 
-    //constructor to initialize
+    //konstruktor untuk inisiaisasi fields
     public Vehicle(String name, int speed, double fuelLevel) {
         this.name = name;
         this.speed = speed;
@@ -33,6 +33,7 @@ public abstract class Vehicle implements Refuelable {
         fuelLevel = validateFuelLevel(newFuelLevel);
     }
 
+    //memvalidasi nilai bahan bakar yang diberikan bukan negatif dan tidak lebih dari 100
     public double validateFuelLevel(double newFuelLevel) {
         if (newFuelLevel <= 0) {
             return 0;
@@ -41,12 +42,11 @@ public abstract class Vehicle implements Refuelable {
         } else {
             return newFuelLevel;
         }
-
     }
 
-    //metode abstrak : gapunya body method, jadi harus diimplementasikan oleh sublass
-    public abstract void move();
-    public abstract void calculateFuelConsumption(double distance);
+    //metode abstrak : tidak memilik body method, jadi harus diimplementasikan oleh sublass
+    public abstract void move(); //kendaraan akan bergerak
+    public abstract void calculateFuelConsumption(double distance); //menghitung fuel consumption dan remaining full level
 
     //fitur tambahan
     public abstract void stop();
