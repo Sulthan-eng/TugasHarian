@@ -10,7 +10,7 @@ public abstract class Vehicle implements Refuelable {
     public Vehicle(String name, int speed, double fuelLevel) {
         this.name = name;
         this.speed = speed;
-        this.fuelLevel = validateFuelLevel(fuelLevel);
+        this.fuelLevel = validateFuelLevel(fuelLevel);  //validasi nilai bahan bakar
     }
     //Getter akan mengembalikan name, speed, fuelLevel bila dipanggil
     public String getName() {
