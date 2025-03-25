@@ -1,5 +1,6 @@
 package Vehicle.ok;
 
+//Subclass WaterVehicle mewarisi abstract class Vehicle dan mengimplementasikan interface yang memiliki fields baru
 public class WaterVehicle extends Vehicle implements Refuelable{
     private boolean hasPropeller;
 
@@ -24,7 +25,7 @@ public class WaterVehicle extends Vehicle implements Refuelable{
         System.out.println(getName() + " bergerak di air dengan kecepatan " + getSpeed() + " km/jam, menggunakan baling-baling: " + hasPropeller );
     }
 
-    //implementasi metode calculateFuelConsumption(double distance), penggunaan override optional
+    //implementasi metode calculateFuelConsumption(double distance
     @Override
     public void calculateFuelConsumption(double distance){
         double fuelConsumption = distance / 8;

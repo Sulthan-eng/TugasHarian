@@ -1,9 +1,9 @@
 package Vehicle.ok;
 
-//subclass mewarisi abstract class dan mengimplementasi interface
+//subclass LandVehicle mewarisi abstract class Vehicle dan mengimplementasikan interface
 public class LandVehicle extends Vehicle implements Refuelable {
     //new fields
-    private int wheels; //jumlah roda
+    private final int wheels; //jumlah roda
 
     //subclass konstruktor mengambil nilai args, memanggil konstruktor super dan meneruskan nilai
     public LandVehicle(String name, int speed, double fuelLevel, int wheels) {

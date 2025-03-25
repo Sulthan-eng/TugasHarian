@@ -30,7 +30,7 @@ public abstract class Vehicle implements Refuelable {
         speed = newSpeed;  //bisa juga gini
     }
     public void setFuelLevel(double newFuelLevel) {
-        fuelLevel = validateFuelLevel(newFuelLevel);
+        fuelLevel = validateFuelLevel(newFuelLevel); //untuk memvalidasi
     }
 
     //memvalidasi nilai bahan bakar yang diberikan bukan negatif dan tidak lebih dari 100

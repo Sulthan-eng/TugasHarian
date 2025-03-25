@@ -11,8 +11,8 @@ public class AirVehicle extends Vehicle {
         this.setHasPropeller(hasPropeller);
     }
 
-    //Getter untuk mengembalikan field hasWing
-    public boolean getHasPropeller() {
+    //Getter untuk mengembalikan field hasPropeller
+    public boolean hasPropeller() {
         return hasPropeller;
     }
 
