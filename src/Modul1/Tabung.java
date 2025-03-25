@@ -4,11 +4,11 @@ public class Tabung {
     public static void main(String[] args) {
         LuasIsi Tabung1 = new LuasIsi(10, 7);
         double LuasIsi = Tabung1.hitungLuas();
-        System.out.println("Luas Isi Tabung1 : " + LuasIsi);
+        System.out.println("Luas Isi Tabung : " + LuasIsi);
 
         Volume Tabung = new Volume(12, 7);
         double Volume = Tabung.hitungVolume();
-        System.out.println("Volume Tabung1 : " + Volume);
+        System.out.println("Volume Tabung : " + Volume);
     }
 }
 class LuasIsi {
