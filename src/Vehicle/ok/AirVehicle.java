@@ -40,7 +40,7 @@ public class AirVehicle extends Vehicle  {
     //implementasi fitur tambahan di class abstract
     @Override
     public void stop(){
-        System.out.println(getName() + " ini berhenti ketika telah mendarat");
+        System.out.println(getName() + " ini akan berhenti ketika telah mendarat");
     }
 
     //implementasi interface Refuelable

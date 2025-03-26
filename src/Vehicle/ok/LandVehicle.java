@@ -29,7 +29,7 @@ public class LandVehicle extends Vehicle  {
     //implementasi fitur tambahan di class abstract
     @Override
     public void stop(){
-        System.out.println(getName() + " ini berhenti ketika bertemu lampu merah");
+        System.out.println(getName() + " ini akan berhenti ketika bertemu lampu merah");
     }
 
     //implementasi metode refuel (double amount) dari Interface Refuelable

@@ -38,7 +38,7 @@ public class WaterVehicle extends Vehicle {
     //implementasi fitur tambahan di class abstract
     @Override
     public void stop(){
-        System.out.println(getName() + " ini berhenti ketika bertemu pelabuhan");
+        System.out.println(getName() + " ini akan berhenti ketika bertemu pelabuhan");
     }
 
     //implementasi interface Refuelable
