@@ -53,7 +53,6 @@ class HitungLuasPrismaSegitiga{
 
     public double hitungLuasPrisma(){
         double luasAlas = HitungLuasALas();
-        double kelilingAlas = HitungKelilingAlas();
         double luasSelimut = HitungLuasSelimut();
         return (2 * luasAlas) + luasSelimut;
     }
