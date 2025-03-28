@@ -2,29 +2,29 @@ package Modul2;
 import java.util.Scanner;
 
 class HitungKelilingLingkaran {
-    double jarijari;
+    double jariJari;
     double PI = Math.PI;
-    public HitungKelilingLingkaran(double jarijari) {
-        this.jarijari = jarijari;
+    public HitungKelilingLingkaran(double jariJari) {
+        this.jariJari = jariJari;
     }
 
     double hitungKeliling(){
-        return 2*PI*jarijari;
+        return 2*PI*jariJari;
     }
 }
 class HitungLuasTrapesium {
-    double sisiatas;
-    double sisibawah;
+    double sisiAtas;
+    double sisiBawah;
     double tinggi;
 
-    public HitungLuasTrapesium(double sisiatas, double sisibawah, double tinggi) {
-        this.sisiatas = sisiatas;
-        this.sisibawah = sisibawah;
+    public HitungLuasTrapesium(double sisiAtas, double sisiBawah, double tinggi) {
+        this.sisiAtas = sisiAtas;
+        this.sisiBawah = sisiBawah;
         this.tinggi = tinggi;
     }
 
     double hitungLuas(){
-        return 0.5 * (sisiatas + sisibawah) * tinggi;
+        return 0.5 * (sisiAtas + sisiBawah) * tinggi;
     }
 }
 class HitungLuasPrismaSegitiga{
