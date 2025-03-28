@@ -1,6 +1,5 @@
 package Modul1;
 
-//berisi class luas isi dan volume tabung dengan menerapkan method dan object
 public class Tabung {
     public static void main(String[] args) {
         LuasIsi tabung1 = new LuasIsi(10, 7);
