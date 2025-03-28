@@ -69,7 +69,7 @@ public class HitungScanner {
         double jarijari = input.nextDouble();
 
         HitungKelilingLingkaran lingkaran = new HitungKelilingLingkaran(jarijari);
-        double keliling = lingkaran.hitungKeliling();
+        double keliling = lingkaran.hitungKeliling(); //memanggil method hitungKeliling() pada objek lingkaran dan menyimpan hasil perhitungan hitungKeliling() ke dalam variabel keliling
         System.out.println("Keliling Lingkaran : " + keliling);
 
 
