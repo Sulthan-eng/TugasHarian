@@ -38,7 +38,7 @@ class HitungLuasPrismaSegitiga{
         this.tinggiPrisma = tinggiPrisma;
     }
 
-    private double HitungLuasALas(){ //membungkus program agar tidak dapat sembarang diakses dari luar
+    private double HitungLuasALas(){ //membungkus program agar tidak dapat sembarang diakses dari luar/hanya HitungLuasAlas yg bisa akses method ini
         return 0.5 * alas * tinggiSegitiga;
     }
 
@@ -94,8 +94,8 @@ public class HitungScanner {
         double tinggiPrisma = input.nextDouble();
 
         HitungLuasPrismaSegitiga prismaSegitiga = new HitungLuasPrismaSegitiga(alas, tinggiSegitiga, tinggiPrisma);
-
-
+        double luasPrisma = prismaSegitiga.hitungLuasPrisma();
+        System.out.println("Luas Prisma Segitiga : " + luasPrisma);
 
         input.close();
     }
