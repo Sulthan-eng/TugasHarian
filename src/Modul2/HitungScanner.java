@@ -55,7 +55,7 @@ class HitungLuasPrismaSegitiga{
         double luasAlas = HitungLuasALas();
         double kelilingAlas = HitungKelilingAlas();
         double luasSelimut = HitungLuasSelimut();
-        return (2 * luasAlas) + (kelilingAlas * luasSelimut);
+        return (2 * luasAlas) + luasSelimut;
     }
 
 }
