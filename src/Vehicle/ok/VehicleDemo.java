@@ -3,9 +3,9 @@ package Vehicle.ok;
 public class VehicleDemo {
     public static void main(String[] args) {
         Vehicle[] vehicles = {
-                new LandVehicle("Bus",120,150,4),
+                new LandVehicle("Bus",110,150,4),
                 new WaterVehicle("Speedboat", 80,50,true),
-                new LandVehicle("Bugatti Chiron", 200,95,4),
+                new LandVehicle("Bugatti Chiron", 220,95,4),
                 new WaterVehicle("Kapal Ferry", 140,23,true),
                 new AirVehicle("Helikopter",200,45,true)
         };
