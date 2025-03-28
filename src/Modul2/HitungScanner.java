@@ -31,9 +31,32 @@ class HitungLuasPrismaSegitiga{
     double alas;
     double tinggiSegitiga ;
     double tinggiPrisma;
-    double sisi1;
-    double sisi2;
-    double sisi3;
+
+    public HitungLuasPrismaSegitiga(double alas, double tinggiSegitiga, double tinggiPrisma) {
+        this.alas = alas;
+        this.tinggiSegitiga = tinggiSegitiga;
+        this.tinggiPrisma = tinggiPrisma;
+    }
+
+    private double HitungLuasALas(){ //membungkus program agar tidak dapat sembarang diakses dari luar
+        return 0.5 * alas * tinggiSegitiga;
+    }
+
+    private double HitungKelilingAlas(){  //keliling segitiga, cari sisi miring dulu
+        double sisiMiring = Math.sqrt((alas * alas) + (tinggiSegitiga * tinggiSegitiga));
+        return alas + tinggiSegitiga + sisiMiring;
+    }
+
+    private double HitungLuasSelimut(){
+        return HitungKelilingAlas() * tinggiPrisma;
+    }
+
+    public double hitungLuasPrisma(){
+        double luasAlas = HitungLuasALas();
+        double kelilingAlas = HitungKelilingAlas();
+        double luasSelimut = HitungLuasSelimut();
+        return (2 * luasAlas) + (kelilingAlas * luasSelimut);
+    }
 
 }
 
@@ -45,8 +68,8 @@ public class HitungScanner {
         System.out.print("Masukkan jari-jari : ");
         double jarijari = input.nextDouble();
 
-        HitungKelilingLingkaran Lingkaran = new HitungKelilingLingkaran(jarijari);
-        double keliling = Lingkaran.hitungKeliling();
+        HitungKelilingLingkaran lingkaran = new HitungKelilingLingkaran(jarijari);
+        double keliling = lingkaran.hitungKeliling();
         System.out.println("Keliling Lingkaran : " + keliling);
 
 
@@ -58,10 +81,19 @@ public class HitungScanner {
         System.out.print("Masukkan tinggi : ");
         double tinggi = input.nextDouble();
 
-        HitungLuasTrapesium Trapesium = new HitungLuasTrapesium(sisiatas, sisibawah, tinggi);
-        double luas = Trapesium.hitungLuas();
+        HitungLuasTrapesium trapesium = new HitungLuasTrapesium(sisiatas, sisibawah, tinggi);
+        double luas = trapesium.hitungLuas();
         System.out.println("Luas Trapesium : " + luas);
 
+        System.out.println("Menghitung Luas Prisma Segitiga");
+        System.out.println("Masukkan alas : ");
+        double alas = input.nextDouble();
+        System.out.println("Masukkan tinggi segitiga : ");
+        double tinggiSegitiga = input.nextDouble();
+        System.out.println("Masukkan tinggi prisma : ");
+        double tinggiPrisma = input.nextDouble();
+
+        HitungLuasPrismaSegitiga prismaSegitiga = new HitungLuasPrismaSegitiga(alas, tinggiSegitiga, tinggiPrisma);
 
 
 
