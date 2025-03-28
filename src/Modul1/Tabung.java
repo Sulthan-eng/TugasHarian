@@ -2,12 +2,12 @@ package Modul1;
 
 public class Tabung {
     public static void main(String[] args) {
-        LuasIsi Tabung1 = new LuasIsi(10, 7);
-        double LuasIsi = Tabung1.hitungLuas();
+        LuasIsi tabung1 = new LuasIsi(10, 7);
+        double LuasIsi = tabung1.hitungLuas();
         System.out.println("Luas Isi Tabung : " + LuasIsi);
 
-        Volume Tabung = new Volume(12, 7);
-        double Volume = Tabung.hitungVolume();
+        Volume tabung2 = new Volume(12, 7);
+        double Volume = tabung2.hitungVolume();
         System.out.println("Volume Tabung : " + Volume);
     }
 }
