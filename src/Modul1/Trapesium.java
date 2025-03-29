@@ -3,8 +3,8 @@ package Modul1;
 public class Trapesium {
     public static void main(String[] args) {
         LuasTrapesium trapesium= new LuasTrapesium(5,7,8);
-        double luasTrapesium = trapesium.luasTrapesium();
-        System.out.println("Luas trapesium : " + luasTrapesium);
+        double luasSiTrapesium = trapesium.luasTrapesium();
+        System.out.println("Luas trapesium : " + luasSiTrapesium);
     }
 }
 
