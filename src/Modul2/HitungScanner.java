@@ -38,22 +38,22 @@ class HitungLuasPrismaSegitiga{
         this.tinggiPrisma = tinggiPrisma;
     }
 
-    private double HitungLuasALas(){ //membungkus program agar tidak dapat sembarang diakses dari luar/hanya HitungPrismaSegitiga yg bisa akses method ini
+    private double hitungLuasALas(){ //membungkus program agar tidak dapat sembarang diakses dari luar/hanya HitungPrismaSegitiga yg bisa akses method ini
         return 0.5 * alas * tinggiSegitiga;
     }
 
-    private double HitungKelilingAlas(){  //keliling segitiga, cari sisi miring dulu
+    private double hitungKelilingAlas(){  //keliling segitiga, cari sisi miring dulu
         double sisiMiring = Math.sqrt((alas * alas) + (tinggiSegitiga * tinggiSegitiga));
         return alas + tinggiSegitiga + sisiMiring;
     }
 
-    private double HitungLuasSelimut(){
-        return HitungKelilingAlas() * tinggiPrisma;
+    private double hitungLuasSelimut(){
+        return hitungKelilingAlas() * tinggiPrisma;
     }
 
     public double hitungLuasPrisma(){
-        double luasAlas = HitungLuasALas();
-        double luasSelimut = HitungLuasSelimut();
+        double luasAlas = hitungLuasALas();
+        double luasSelimut = hitungLuasSelimut();
         return (2 * luasAlas) + luasSelimut;
     }
 
