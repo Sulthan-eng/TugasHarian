@@ -38,7 +38,7 @@ class HitungLuasPrismaSegitiga{
         this.tinggiPrisma = tinggiPrisma;
     }
 
-    private double HitungLuasALas(){ //membungkus program agar tidak dapat sembarang diakses dari luar/hanya HitungLuasAlas yg bisa akses method ini
+    private double HitungLuasALas(){ //membungkus program agar tidak dapat sembarang diakses dari luar/hanya HitungPrismaSegitiga yg bisa akses method ini
         return 0.5 * alas * tinggiSegitiga;
     }
 
