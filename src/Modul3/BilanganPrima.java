@@ -3,7 +3,7 @@ package Modul3;
 class CariBilanganPrima {
      public void BilanganPrimaForLoop(){
          System.out.println("Bilangan Prima For-Loop : ");
-         for(int angka = 2; angka <= 1000; angka++){
+         for(int angka = 2; angka <= 1000; angka++){  //selama kurang dari sama dengan 1000 angka akan terus bertambah (init statement)
              boolean Prima = true;
              for(int i = 2; i <= Math.sqrt(angka); i++){ //cek angka habis dibagi i
                  if (angka % i == 0 ){
