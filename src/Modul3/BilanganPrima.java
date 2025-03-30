@@ -2,10 +2,10 @@ package Modul3;
 
 class CariBilanganPrima {
      public void BilanganPrimaForLoop(){
-         System.out.println("Bilangan Prima For Loop : ");
-         for(int angka = 2; angka <=1000; angka++){
+         System.out.println("Bilangan Prima For-Loop : ");
+         for(int angka = 2; angka <= 1000; angka++){
              boolean Prima = true;
-             for(int i = 2; i <= Math.sqrt(angka); i++){
+             for(int i = 2; i <= Math.sqrt(angka); i++){ //cek angka habis dibagi i
                  if (angka % i == 0 ){
                      Prima = false;
                      break;
@@ -19,7 +19,7 @@ class CariBilanganPrima {
      }
 
      public void BilanganPrimaWhileLoop(){
-         System.out.println("Bilangan Prima While Loop : ");
+         System.out.println("Bilangan Prima While-Loop : ");
          int angka = 2;
 
          while(angka <= 1000){
@@ -39,6 +39,28 @@ class CariBilanganPrima {
          }
          System.out.println();
      }
+
+     public void BilanganPrimaDoWhileLoop(){
+         System.out.println("Bilangan Prima Do-While-Loop : ");
+         int angka = 2;
+
+         do {
+             boolean Prima = true;
+             int i = 2;
+
+             while (i <= Math.sqrt(angka)){
+                 if (angka % i == 0 ){
+                     Prima = false;
+                     break;
+                 }
+                 i++;
+             }
+             if(Prima){
+                 System.out.print(angka + " ");
+             }
+             angka++;
+         } while(angka <= 1000);
+     }
 }
 
 public class BilanganPrima {
@@ -47,5 +69,6 @@ public class BilanganPrima {
 
         prima.BilanganPrimaForLoop();
         prima.BilanganPrimaWhileLoop();
+        prima.BilanganPrimaDoWhileLoop();
     }
 }
