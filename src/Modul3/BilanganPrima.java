@@ -2,7 +2,7 @@ package Modul3;
 
 class CariBilanganPrima {
      public void BilanganPrimaForLoop(){
-         System.out.println("Bilangan Prima For-Loop : ");
+         System.out.println("Bilangan Prima 1 sampai 1000 dengan For-Loop : ");
          for(int angka = 2; angka <= 1000; angka++){  //selama kurang dari sama dengan 1000 angka akan terus bertambah (init statement)
              boolean Prima = true;
              for(int i = 2; i <= Math.sqrt(angka); i++){ //cek angka habis dibagi i
@@ -19,7 +19,7 @@ class CariBilanganPrima {
      }
 
      public void BilanganPrimaWhileLoop(){
-         System.out.println("Bilangan Prima While-Loop : ");
+         System.out.println("Bilangan Prima 1 sampai 1000 dengan While-Loop : ");
          int angka = 2;
 
          while(angka <= 1000){
@@ -41,7 +41,7 @@ class CariBilanganPrima {
      }
 
      public void BilanganPrimaDoWhileLoop(){
-         System.out.println("Bilangan Prima Do-While-Loop : ");
+         System.out.println("Bilangan Prima 1 sampai 1000 dengan Do-While-Loop : ");
          int angka = 2;
 
          do {
