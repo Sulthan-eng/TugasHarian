@@ -23,16 +23,16 @@ class CariBilanganPrima {
          int angka = 2;
 
          while(angka <= 1000){
-             boolean Prima = true;
+             boolean prima = true;
              int i = 2;
              while (i <= Math.sqrt(angka)){
                  if (angka % i == 0 ){
-                     Prima = false;
+                     prima = false;
                      break;
                  }
                  i++;
              }
-             if(Prima){
+             if(prima){
                  System.out.print(angka + " ");   //cetak bilangan prima
              }
              angka++;
@@ -45,17 +45,17 @@ class CariBilanganPrima {
          int angka = 2;
 
          do {
-             boolean Prima = true;
+             boolean prima = true;
              int i = 2;
 
              while (i <= Math.sqrt(angka)){
                  if (angka % i == 0 ){
-                     Prima = false;
+                     prima = false;
                      break;
                  }
                  i++;
              }
-             if(Prima){
+             if(prima){
                  System.out.print(angka + " ");
              }
              angka++;
