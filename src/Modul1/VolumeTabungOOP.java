@@ -2,8 +2,8 @@ package Modul1;
 
 public class VolumeTabungOOP {
     public static void main(String[] args) {
-        Volume tabung = new Volume(12, 14);
-        double Volume = tabung.hitungVolume();
+        Volume tabung = new Volume(12, 14   );
+        double volume = tabung.hitungVolume();
         System.out.println("Volume Tabung : " + Volume);
     }
 }
