@@ -4,7 +4,7 @@ public class VolumeTabungOOP {
     public static void main(String[] args) {
         Volume tabung = new Volume(12, 14   );
         double volume = tabung.hitungVolume();
-        System.out.println("Volume Tabung : " + Volume);
+        System.out.println("Volume Tabung : " + volume);
     }
 }
 
