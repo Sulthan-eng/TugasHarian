@@ -47,6 +47,6 @@ public class AkademikMahasiswa {
         mahasiswa.tampilData("Sulthan", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis", "Fakultas Sains dan Teknologi Informasi");
         mahasiswa.tampilData("Sulthan", 11241080,3.78, 3.97);
         mahasiswa.tampilData("Sulthan Farizan Fawwaz", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis",  "Fakultas Sains dan Teknologi Informasi", 3.78, 3.97,
-                new String[]{"KIP", "Beasiswa Unggulan"});
+                new String[]{"KIP", "Kaltim"});
     }
 }
