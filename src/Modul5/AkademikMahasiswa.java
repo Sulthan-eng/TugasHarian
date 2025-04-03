@@ -45,7 +45,7 @@ public class AkademikMahasiswa {
     public static void main(String[] args) {
         AkademikMahasiswa mahasiswa = new AkademikMahasiswa();
         mahasiswa.tampilData("Sulthan", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis", "Fakultas Sains dan Teknologi Informasi");
-        mahasiswa.tampilData("Sulthan", 11241080,3.78, 3.97);
+        mahasiswa.tampilData("Sulthan", 11241080,3.8, 3.97);
         mahasiswa.tampilData("Sulthan Farizan Fawwaz", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis",  "Fakultas Sains dan Teknologi Informasi", 3.78, 3.97,
                 new String[]{"KIP", "Kaltim"});
     }
