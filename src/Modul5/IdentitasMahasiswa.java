@@ -10,7 +10,6 @@ public class IdentitasMahasiswa {
         this.nim = nim;
         this.jurusan = jurusan;
         this.fakultas = fakultas;
-        System.out.println("Profile Mahasiswa");
     }
     public IdentitasMahasiswa(String nama, int nim, String jurusan, String fakultas, double ipSemester, double ipKumulatif){
         this.nama = nama;
