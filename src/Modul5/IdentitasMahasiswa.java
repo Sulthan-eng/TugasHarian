@@ -20,7 +20,15 @@ public class IdentitasMahasiswa {
         this.ipKumulatif = ipKumulatif;
     }
 
-    public void tampilIdentitas(){
+    public void tampilIdentitas1(){
+        System.out.println("Identitas Mahasiswa");
+        System.out.println("Nama: " + nama);
+        System.out.println("NIM: " + nim);
+        System.out.println("Jurusan: " + jurusan);
+        System.out.println("Fakultas: " + fakultas);
+    }
+
+    public void tampilIdentitas2(){
         System.out.println("Identitas Mahasiswa");
         System.out.println("Nama: " + nama);
         System.out.println("NIM: " + nim);
@@ -34,7 +42,7 @@ public class IdentitasMahasiswa {
         IdentitasMahasiswa mahasiswa1 = new IdentitasMahasiswa("Sulthan", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis", "Fakultas Sains dan Teknologi Informasi" );
         IdentitasMahasiswa mahasiswa2 = new IdentitasMahasiswa("Sulthan", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis", "Fakultas Sains dan Teknologi Informasi", 3.8, 3.98  );
 
-        mahasiswa1.tampilIdentitas();
-        mahasiswa2.tampilIdentitas();
+        mahasiswa1.tampilIdentitas1();
+        mahasiswa2.tampilIdentitas2();
     }
 }
