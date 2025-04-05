@@ -32,7 +32,7 @@ public class IdentitasMahasiswa {
 
     public static void main(String[] args) {
         IdentitasMahasiswa mahasiswa1 = new IdentitasMahasiswa("Sulthan", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis", "Fakultas Sains dan Teknologi Informasi" );
-        IdentitasMahasiswa mahasiswa2 = new IdentitasMahasiswa("Sulthan", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis", "Fakultas Sains dan Teknologi Informasi" );
+        IdentitasMahasiswa mahasiswa2 = new IdentitasMahasiswa("Sulthan", 11241080, "Jurusan Teknik Elektro, Informatika, dan Bisnis", "Fakultas Sains dan Teknologi Informasi", 3.8, 3.98  );
 
         mahasiswa1.tampilIdentitas();
         mahasiswa2.tampilIdentitas();
