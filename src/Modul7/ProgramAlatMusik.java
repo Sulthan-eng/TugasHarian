@@ -50,7 +50,7 @@ public class ProgramAlatMusik {
         alatMusik[0] = new Piano();
         alatMusik[1] = new Biola();
         alatMusik[2] = new Gitar();
-        alatMusik[3] = new Trumpet();
+        alatMusik[3] = new Drum();
         alatMusik[4] = new Saxophone();
         alatMusik[5] = new Trumpet();
 
