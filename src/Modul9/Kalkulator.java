@@ -5,7 +5,7 @@ import javax.naming.spi.DirStateFactory;
 import javax.swing.*;
 
 public class Kalkulator extends javax.swing.JFrame {
-    private JTextField display;
+    private JTextField display;    
     private String angka = "";
     private String operator;
     private double bil1, bil2, hasil;
@@ -21,37 +21,37 @@ public class Kalkulator extends javax.swing.JFrame {
         angka += "1";
         display.setText(angka);
     }
-
+    
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
         angka += "2";
         display.setText(angka);
     }
-
+    
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
         angka += "3";
         display.setText(angka);
     }
-
+    
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
         angka += "4";
         display.setText(angka);
-    }
+    }    
 
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
         angka += "5";
         display.setText(angka);
     }
-
+    
     private void jButton7MouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
         angka += "6";
         display.setText(angka);
     }
-
+    
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
         angka += "7";
@@ -60,21 +60,21 @@ public class Kalkulator extends javax.swing.JFrame {
 
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
-        angka += "8";
-        display.setText(angka);
+       angka += "8";
+       display.setText(angka);
     }
 
     private void jButton10MouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
-        angka += "9";
-        display.setText(angka);
+       angka += "9";
+       display.setText(angka);
     }
 
     private void jButtonDotMouseClicked(java.awt.event.MouseEvent evt){
         //To Do add ur handling code here
         if (!angka.contains(".")){
-            angka += ".";
-            display.setText(angka);
+        angka += ".";
+        display.setText(angka);
         }
     }
 
@@ -98,7 +98,7 @@ public class Kalkulator extends javax.swing.JFrame {
             operator = "-";
             angka = "";
             display.setText(angka);
-        }
+        } 
         catch(NumberFormatException error){
             display.setText("Terjadi Kesalahan");
         }
@@ -196,7 +196,7 @@ public class Kalkulator extends javax.swing.JFrame {
             display.setText("Terjadi kesalahan");
         }
     }
-
+    
     private void jButtonDeleteMouseClicked(java.awt.event.MouseEvent evt){
         //To Do ur handling code here
         if(angka.length() > 0){
@@ -207,12 +207,12 @@ public class Kalkulator extends javax.swing.JFrame {
 
     private void jButtonClearMouseClicked(java.awt.event.MouseEvent evt){
         //To Do ur handling code here
-        angka = "";
-        operator = null;
-        bil1 = 0;
-        bil2 = 0;
-        hasil = 0;
-        display.setText("");
+       angka = "";
+       operator = null;
+       bil1 = 0;
+       bil2 = 0;
+       hasil = 0;
+       display.setText("");
     }
 
     private void jButtonEqualMouseClicked(java.awt.event.MouseEvent evt){
@@ -232,7 +232,7 @@ public class Kalkulator extends javax.swing.JFrame {
                 case "/":
                     if(bil2 != 0){
                         hasil = bil1 / bil2;
-                    }
+                    }        
                     else{
                         display.setText("Tidak terdefinisi");
                         return;
@@ -243,7 +243,7 @@ public class Kalkulator extends javax.swing.JFrame {
                     break;
                 case "mod":
                     if(bil2 != 0){
-                        hasil = bil1 % bil2;
+                    hasil = bil1 % bil2;
                     }
                     else {
                         display.setText("Terjadi kesalahan");
@@ -262,7 +262,7 @@ public class Kalkulator extends javax.swing.JFrame {
                 case "root":
                     if(bil1 >= 0){
                         hasil = Math.sqrt(bil1);
-                    }
+                    }        
                     else{
                         display.setText("Terjadi kesalahan");
                         return;
@@ -299,7 +299,7 @@ public class Kalkulator extends javax.swing.JFrame {
         tombolClear.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         tombolClear.addMouseListener(new java.awt.event.MouseAdapter(){
             public void mouseClicked(java.awt.event.MouseEvent evt){
-                jButtonClearMouseClicked(evt);
+               jButtonClearMouseClicked(evt);
             }
         });
         buttonPanel.add(tombolClear);
@@ -336,7 +336,7 @@ public class Kalkulator extends javax.swing.JFrame {
         tombolPangkat2.addMouseListener(new java.awt.event.MouseAdapter(){
             public void mouseClicked(java.awt.event.MouseEvent evt){
                 jButtonSquareMouseClicked(evt);
-            }
+            }    
         });
         buttonPanel.add(tombolPangkat2);
 
@@ -344,8 +344,8 @@ public class Kalkulator extends javax.swing.JFrame {
         tombolPangkat3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         tombolPangkat3.addMouseListener(new java.awt.event.MouseAdapter(){
             public void mouseClicked(java.awt.event.MouseEvent evt){
-                jButtonCubicMouseClicked(evt);
-            }
+               jButtonCubicMouseClicked(evt);
+            }    
         });
         buttonPanel.add(tombolPangkat3);
 
@@ -372,10 +372,10 @@ public class Kalkulator extends javax.swing.JFrame {
         tombol7.addMouseListener(new java.awt.event.MouseAdapter(){
             public void mouseClicked(java.awt.event.MouseEvent evt){
                 jButton8MouseClicked(evt);
-            }
+            }    
         });
         buttonPanel.add(tombol7);
-
+        
         JButton tombol8 = new JButton("8");
         tombol8.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         tombol8.addMouseListener(new java.awt.event.MouseAdapter(){
@@ -384,7 +384,7 @@ public class Kalkulator extends javax.swing.JFrame {
             }
         });
         buttonPanel.add(tombol8);
-
+        
         JButton tombol9 = new JButton("9");
         tombol9.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         tombol9.addMouseListener(new java.awt.event.MouseAdapter(){
@@ -465,7 +465,7 @@ public class Kalkulator extends javax.swing.JFrame {
             }
         });
         buttonPanel.add(tombol3);
-
+        
         JButton tombolEquals = new JButton("=");
         tombolEquals.setFont(new Font("Times New Roman", Font.PLAIN, 20));
         tombolEquals.addMouseListener(new java.awt.event.MouseAdapter(){
