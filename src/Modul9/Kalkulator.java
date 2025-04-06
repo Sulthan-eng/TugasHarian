@@ -199,7 +199,7 @@ public class Kalkulator extends javax.swing.JFrame {
     
     private void jButtonDeleteMouseClicked(java.awt.event.MouseEvent evt){
         //To Do ur handling code here
-        if(angka.length() > 0){
+        if(!angka.isEmpty()){
             angka = angka.substring(0, angka.length() - 1);
             display.setText(angka);
         }
