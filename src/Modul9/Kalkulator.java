@@ -239,7 +239,12 @@ public class Kalkulator extends javax.swing.JFrame {
                     }
                     break;
                 case "%":
+                    if(bil2 == 0){
+                        hasil = bil1/100; 
+                    }
+                    else{
                     hasil = bil1 * bil2 / 100;
+                    }
                     break;
                 case "mod":
                     if(bil2 != 0){
@@ -510,5 +515,3 @@ public class Kalkulator extends javax.swing.JFrame {
         initComponents();
     }
 }
-
-
