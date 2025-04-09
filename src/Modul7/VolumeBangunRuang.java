@@ -63,7 +63,7 @@ class LimasSegitiga extends BangunRuang{
         return 1.0/3.0 * hitungLuasAlas() * tinggiLimas;
     }
     void tampilkanHasil(){
-        System.out.println("Volume LimasSegitiga : " + hitungVolume());
+        System.out.println("Volume Limas Segitiga : " + hitungVolume());
     }
 }
 
@@ -77,7 +77,7 @@ class PrismaSegitiga extends BangunRuang{
         return hitungLuasAlas() * tinggiPrisma;
     }
     void tampilkanHasil(){
-        System.out.println("Volume PrismaSegitiga : " + hitungVolume());
+        System.out.println("Volume Prisma Segitiga : " + hitungVolume());
     }
 }
 
