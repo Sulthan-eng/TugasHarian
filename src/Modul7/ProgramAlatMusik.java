@@ -1,7 +1,6 @@
 package Modul7;
 
 class AlatMusik {
-    String name;
 
     void bunyi(){
         System.out.println("Alat musik ini mengeluarkan suara ... ");
