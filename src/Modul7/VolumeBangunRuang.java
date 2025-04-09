@@ -56,7 +56,7 @@ class Kerucut extends BangunRuang{
 class LimasSegitiga extends BangunRuang{
     double alas, tinggiSegitiga, tinggiLimas;
 
-    double hitungLuasAlas(){
+    private double hitungLuasAlas(){
         return 0.5 * alas * tinggiSegitiga;
     }
     double hitungVolume(){
