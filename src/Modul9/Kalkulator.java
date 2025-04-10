@@ -1,7 +1,6 @@
 package Modul9;
 
 import java.awt.*;
-import javax.naming.spi.DirStateFactory;
 import javax.swing.*;
 
 public class Kalkulator extends javax.swing.JFrame {
