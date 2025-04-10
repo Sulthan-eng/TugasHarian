@@ -260,9 +260,6 @@ public class Kalkulator extends javax.swing.JFrame {
                 case "cube":
                     hasil = Math.pow(bil1, 3);
                     break;
-                case "powers":
-                    hasil = Math.pow(bil1, bil2);
-                    break;
                 case "root":
                     if(bil1 >= 0){
                         hasil = Math.sqrt(bil1);
