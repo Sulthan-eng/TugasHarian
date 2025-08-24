@@ -61,7 +61,6 @@ class CariBilanganGanjilGenap{
             } angka++;
         } while(angka <= 1000);
     }
-
 }
 
 public class BilanganGanjilGenap {
