@@ -56,7 +56,6 @@ class HitungLuasPrismaSegitiga{
         double luasSelimut = hitungLuasSelimut();
         return (2 * luasAlas) + luasSelimut;
     }
-
 }
 
 public class HitungScanner {
